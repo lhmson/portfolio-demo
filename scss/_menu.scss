@@ -41,7 +41,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    //opacity: 0.9;
     visibility: hidden;
 
     &.show{
@@ -61,7 +61,7 @@
     &-nav {
         margin:0;
         padding: 0;
-        background: darken($primary-color, 5);
+        background: rgba(darken($primary-color, 5),0.9);
         list-style: none;
         transform: translate3d(0,-100%,0);
         @include easeOut;
@@ -74,7 +74,7 @@
 
     // branding
     &-branding{
-        background: $primary-color;
+        background: rgba($primary-color,0.9);
         transform: translate3d(0,100%,0);
         @include easeOut;
 
@@ -84,8 +84,8 @@
         }
 
         .portrait {
-            width: 450px;
-            height: 450px;
+            width: 50vh;
+            height: 50vh;
             background: url("../img/portrait.jpg");
             background-size: cover;
             border-radius: 50%;
