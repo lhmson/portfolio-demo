@@ -1,11 +1,15 @@
 // widecreen
 @include mediaXLarge{
-
+    .projects {
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 
 // desktop laptop
 @include mediaLarge{
-    
+    .projects {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 // tablet
@@ -55,12 +59,20 @@
         'info3';
         grid-template-columns: 1fr;
     }
+
+    .projects {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 // mobile phone
 @include mediaSmall{
     main#home h1 {
         margin-top: 10vh;
+        
+    }
 
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
