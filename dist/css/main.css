@@ -112,7 +112,10 @@
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       width: 20vh;
-      height: 20vh; } }
+      height: 20vh; }
+  .about-info {
+    grid-template-areas: 'bio-img' 'bio' 'info1' 'info2' 'info3';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -166,7 +169,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh-60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -178,3 +181,68 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bio-img bio bio' 'info1 info2 info3';
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-img {
+    grid-area: bio-img;
+    margin: auto;
+    width: 30vh;
+    height: 34vh;
+    border-radius: 50%;
+    border: solid 5px #eeca1e; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .info {
+    background: #626262;
+    padding: 1rem;
+    border-bottom: #eeca1e 5px solid; }
+  .about-info .info1 {
+    grid-area: info1; }
+  .about-info .info2 {
+    grid-area: info2; }
+  .about-info .info3 {
+    grid-area: info3; }
+
+#main-footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #3e3e3e;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 20vh;
+      height: 20vh; }
+  .about-info {
+    grid-template-areas: 'bio-img' 'bio' 'info1' 'info2' 'info3';
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }

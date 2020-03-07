@@ -45,6 +45,16 @@
             height: 20vh;
         }
     }
+
+    .about-info{
+        grid-template-areas:
+        'bio-img'
+        'bio'
+        'info1'
+        'info2'
+        'info3';
+        grid-template-columns: 1fr;
+    }
 }
 
 // mobile phone
