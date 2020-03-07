@@ -54,8 +54,8 @@ header {
 
 main{
     padding: 4rem;
-    //height:100%;
-    min-height: calc(100vh-60px);
+    height:100%;
+    //min-height: calc(100vh-60px);
     
     .icons {
         margin-top: 1rem;
@@ -188,7 +188,13 @@ main{
     color: #555;
 }
 
-#main-footer {
+main-footer {
+    /*display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background: lighten($primary-color,18);
+    border-top: 2px solid $secondary-color;
+    */
     text-align: center;
     margin-top: 2rem;
     padding:1rem;
